@@ -1,0 +1,25 @@
+para encender y apagar un led con un delay de 1 s
+//  while(1){
+  //  LATAbits.LATA2 = 1;
+    //__delay_ms(1000);
+   // LATAbits.LATA2 = 0;
+  //  __delay_ms(1000);
+
+// para que el boton prenda el led
+// if(PORTCbits.RC2==1){
+
+//     LATAbits.LATA2 = 0;
+//   }else {
+ //    LATAbits.LATA2 = 1;
+//     }
+
+para que el led se encienda y apague durande 10 (i<x) veces y quede apagado despues de acabar(while)
+for (int i=0; i<=9; i++){
+    LATAbits.LATA2 = 1;
+    __delay_ms( 1000 );
+  LATAbits.LATA2 = 0;
+ __delay_ms(1000);
+}
+while(1){
+    LATAbits.LATA2 = 1;
+}
